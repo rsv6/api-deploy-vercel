@@ -4,7 +4,7 @@ router.get("/", (req, res) => {
   try {
     res.json({
       status: 200,
-      message: "Get data successfully",
+      message: "Get data successfully 213213",
     });
   } catch (err) {
     console.log(err);
