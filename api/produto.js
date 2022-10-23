@@ -1,7 +1,7 @@
 const router = require('express').Router();
 
 router.get("/", (req, res) => {
-  const nome = "rsv6"
+  const nome = req.params.nome
 
   try {
     // res.json({
@@ -9,7 +9,7 @@ router.get("/", (req, res) => {
     //   message: "Get data successfully 213213",
     // });
 
-    res.status(200).send(`<center><strong><button onclick="alert('Development by ${nome}');">Welcome at page teste, deploy back in NodeJS on Vercel</strong></center>`);
+    res.status(200).send(`<center><strong><button onclick="alert('Development by ${nome}');">Pega nome da url</strong></center>`);
 
   } catch (err) {
     console.log(err);
