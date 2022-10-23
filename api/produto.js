@@ -2,10 +2,13 @@ const router = require('express').Router();
 
 router.get("/", (req, res) => {
   try {
-    res.json({
-      status: 200,
-      message: "Get data successfully 213213",
-    });
+    // res.json({
+    //   status: 200,
+    //   message: "Get data successfully 213213",
+    // });
+
+    res.status(200).send("<center><strong>Success</strong></center>");
+
   } catch (err) {
     console.log(err);
     return res.status(500).send("Server error");
