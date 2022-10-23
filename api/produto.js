@@ -1,7 +1,7 @@
 const router = require('express').Router();
 
 router.get("/", (req, res) => {
-  const nome = req.params.nome
+  var nome = req.params.nome
 
   try {
     // res.json({
